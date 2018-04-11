@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="HTTPReqGenTestSuite" parallel="false" verbose="1" >
+  <test name="MemberOpenAccountTest">
+     <parameter name="workBook001" value="./memberOpenAccount.xlsx" />
+    <classes>
+      <class name="com.card.test.MemberOpenAccountTest"/>
+    </classes>
+  </test>
+  <test name="ChangeCardTest">
+     <parameter name="workBook002" value="./changeCard.xlsx" />
+    <classes>
+      <class name="com.card.test.ChangeCardTest"/>
+    </classes>
+  </test>
+</suite>
