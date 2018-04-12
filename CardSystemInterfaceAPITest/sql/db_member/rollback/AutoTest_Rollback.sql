@@ -1,5 +1,5 @@
-DELETE FROM m_r_member_card WHERE account_no LIKE '9527666%';
-DELETE FROM m_e_member WHERE address LIKE '云南省昆明市静海湖%';
+﻿DELETE FROM m_r_member_card WHERE account_no LIKE '3333333%';
+DELETE FROM m_e_member WHERE address LIKE 'XXXXXX%';
 
 
 

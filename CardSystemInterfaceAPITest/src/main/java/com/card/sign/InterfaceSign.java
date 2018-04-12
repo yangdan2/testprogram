@@ -7,11 +7,11 @@ public class InterfaceSign {
 	private SignFactory signfactory;
 	//InterfaceTypeFacctory IntType =new InterfaceTypeFacctory();
 	/****
-	 * 卡系统换卡接口
+	 * 接口02
 	 */
 	private static final int ChangeCard = 1;
 	/****
-	 * 卡系统会员开通接口
+	 * 接口01
 	 */
 	private static final int MemberOpenAccount = 2;
 	String sign=null;
