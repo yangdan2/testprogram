@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript">    function file_change(e)    {        document.getElementById("file_name").value = e;    }    </script>
+</head>
+<body>
+<form action="">
+  <input type="text" readonly name="file_name" id="file_name"/>
+  <input type="file" name="btn_file" style="display:none" onchange="file_change(this.value)"/>
+  <input type="button" value="浏 览" onclick="btn_file.click();" name="get_file"/>
+  <input type="submit" value="提 交" name="sub"/>
+</form>
+</body>
+</html>

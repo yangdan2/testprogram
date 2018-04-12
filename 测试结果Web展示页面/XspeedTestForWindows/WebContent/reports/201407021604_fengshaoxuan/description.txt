@@ -1,0 +1,4 @@
+date=201407021604
+version=xspeedtradeapi-1.0.0-doc.v7260
+version=172.21.200.19
+result=${test.failed}

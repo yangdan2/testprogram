@@ -1,0 +1,30 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: All Failures</title>
+<link rel="stylesheet" type="text/css" title="Style" href="stylesheet.css">
+</head>
+<body onload="open('allclasses-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>All Failures</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="com/dfitc/junit/main/0_DFITCJunitWinMain.html">DFITCJunitWinMain</a></td><td><a name="reqCancelOrder[0]"></a><a href="com/dfitc/junit/main/0_DFITCJunitWinMain.html#reqCancelOrder[0]">reqCancelOrder[0]</a></td><td>Failure</td><td>caseID: apitrader_212 ;request: DFITCCancelOrderRequest [localOrderID=1, accountID=000100000008, contractID=IF1409, spdOrderID=90, requestID=-1]&#13;
+expect:DFITCOrderCancelResponse!=null;but DFITCOrderCancelResponse=null&#13;
+ expected same:&lt;DFITCOrderCancelResponse [localOrderID=1, spdOrderID=-1, orderStatus=DFITC_SPD_TRIGGERED, requestID=-1, customCategory=]&gt; was not:&lt;null&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: caseID: apitrader_212 ;request: DFITCCancelOrderRequest [localOrderID=1, accountID=000100000008, contractID=IF1409, spdOrderID=90, requestID=-1]<br>expect:DFITCOrderCancelResponse!=null;but DFITCOrderCancelResponse=null<br> expected same:&lt;DFITCOrderCancelResponse [localOrderID=1, spdOrderID=-1, orderStatus=DFITC_SPD_TRIGGERED, requestID=-1, customCategory=]&gt; was not:&lt;null&gt;<br>	at com.dfitc.junit.util.ObjectAssertUtil.myAssertSame(ObjectAssertUtil.java:65)<br>	at com.dfitc.junit.test.ReqCancelOrderTest.reqCancelOrder(ReqCancelOrderTest.java:109)<br>
+</code></td><td>1.077</td>
+</tr>
+</table>
+</body>
+</html>

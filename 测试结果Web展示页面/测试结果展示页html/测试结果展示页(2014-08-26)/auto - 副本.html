@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<table cellpadding="0" cellspacing="1" id="main_table">
+  <tr>
+    <td id="logo_body"></td>
+    <td id="navigation_body">
+      <div class="navigation_button"><a>压力测试结果</a></div>
+      <div class="navigation_button_activate"><a>自动化结果</a></div>
+      </td>
+  </tr>
+  <tr>
+    <td id="left_cont">
+      <div> <a href="" style="text-decoration: none;" class="font_weight_normal"
+		onmouseover="font_weight_bold(this)"
+		onmouseout="font_weight_normal(this)" onclick="showfailed()">只显示错误</a> </div>
+      <div> <a href="" style="text-decoration: none;" class="font_weight_normal"
+		onmouseover="font_weight_bold(this)"
+		onmouseout="font_weight_normal(this)" onclick="showlast()">只显示最近一次结果</a> </div>
+      <div> <a href="" style="text-decoration: none;" class="font_weight_normal"
+		onmouseover="font_weight_bold(this)"
+		onmouseout="font_weight_normal(this)" onclick="showall()">显示全部</a> </div>
+      <div>按日期查询：("yyyy.mm.dd")
+        <input type="text" style="width:100px; height:12px; line-height: 18px;"/>
+        <input onclick="query(this)" type="button" value="查询" style="width:38px; font-size:12px;"/>
+      </div>
+      <div> <a href="" style="text-decoration: none;" class="font_weight_normal"
+		onmouseover="font_weight_bold(this)"
+		onmouseout="font_weight_normal(this)" onclick="refresh()">刷新结果列表</a> </div></td>
+    <td id="right_cont">
+    <div class="cont_title">自动化测试结果</div>
+    
+    <table cellpadding="0" cellspacing="0" class="result_show">
+        <tr>
+          <th>&nbsp;</th>
+          <th>运行日期</th>
+          <th>运行版本</th>
+          <th>运行环境</th>
+          <th>结果展示</th>
+        <tr>
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr class="wrong_style">
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr class="wrong_style">
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="right">2010.08.08 13:38</td>
+          <td class="right">jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2010.08.08 13:38</td>
+          <td>jdfllkaklfdslkfjasdjffldsj</td>
+          <td>255.255.255.255</td>
+          <td>runs:405 failures:12 errors:0</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

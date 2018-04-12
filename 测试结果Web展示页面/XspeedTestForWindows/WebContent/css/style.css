@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+#main_table {
+	height: 100%;
+	width: 100%;
+}
+#main_table td{
+	vertical-align: top;
+}
+#logo_body {
+	background: url(imgs/logo.png) center no-repeat #009ad7;
+	height: 50px;
+}
+#navigation_body {
+	background: #009ad7;
+	height: 50px;
+}
+#navigation_body a {
+	color: #ffffff;
+}
+
+.navigation_button {
+	float: left;
+	vertical-align: bottom;
+	padding:30px 20px 2px 20px;
+}
+.navigation_button_activate {
+	float: left;
+	vertical-align: bottom;
+	padding:30px 20px 2px 20px;
+	background-color: #2db9f0;
+}
+
+
+#left_cont {
+	width: 200px;
+	height: 100%;
+	background: #282828;
+	color: #fff;
+}
+#left_cont div {
+	margin: 2px 0px 0px 0px;
+	padding: 8px 0px 5px 10px;
+	width: 180px;
+	float: left;
+	font-size: 12px;
+	line-height:18px;
+	background: #2f2f2f;
+}
+#left_cont a {
+	display:block;
+	color: #fff;
+}
+#left_cont a:hover {
+	font-weight: bold;
+}
+
+#right_cont {
+	width: 100%;
+	min-width: 600px;
+	text-align: center;
+	background-color: #F9F9F9;
+	padding: 0px 20px;
+}
+.cont_title {
+	width: 100%;
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 18px 0px;
+	color: #0866c6;
+}
+
+.result_show {
+	border: 0px;
+	width: 100%;
+}
+.result_show td,th {
+	border: solid #ffffff;
+	border-width: 0px 0px 1px 0px;
+	text-align: center;
+	white-space: nowrap; 
+	font-size: 12px;
+}
+.result_show th {
+	background: #009ad7;
+	color: #ffffff;
+	height: 22px;
+}
+.result_show td {
+	background: #f9f9f9;
+	width: 20px;
+	padding: 5px 10px;
+}
+.wrong_style, .wrong_style a {
+	color: #F00;
+	font-weight: bold;
+}
+
+
+.test_report_table_title td {
+	background: #009ad7;
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 22px;
+	width: 16%;
+	white-space: nowrap;
+}
+
+.test_report_summary td {
+	background: #dddddd;
+	color: #333333;
+	font-size: 12px;
+	text-align: center;
+	line-height: 22px;
+	width: 16%;
+	white-space: nowrap;
+}
+.test_report_cont {
+	margin: 0px 0px 5px 0px;
+	padding-left: 10px;
+	background: #ffffff;
+	color: #333333;
+	font-size: 12px;
+	text-align: left;
+	line-height: 22px;
+	white-space: nowrap;
+	display:none;
+}
+.test_report_cont td{
+	padding-left: 50px;
+}
+.test_report_cont_title {
+	background: #eeeeee;
+	color: #333333;
+	font-weight: bold;
+	white-space: nowrap;
+	padding-left: 20px;
+}
+.test_report_cont_download {
+	text-align:right;
+	padding-right: 20px;
+}
+.test_report_cont_download a{
+	color: #000;
+	font-weight: bold;
+}

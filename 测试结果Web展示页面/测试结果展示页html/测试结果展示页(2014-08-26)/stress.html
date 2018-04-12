@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+	function file_change(e) {
+		document.getElementById("file_name").value = e;
+	}
+</script>
+</head>
+
+<body>
+<table cellpadding="0" cellspacing="1" id="main_table">
+  <tr>
+    <td id="logo_body"></td>
+    <td id="navigation_body">
+      <div class="navigation_button_activate"><a>压力测试结果</a></div>
+      <div class="navigation_button"><a>自动化结果</a></div></td>
+  </tr>
+  <tr>
+    <td id="left_cont">
+   <div> 上传测试结果
+<form method="post">
+  <input type="text" name="file_name" id="file_name"  style="width:162px; height:12px; margin-bottom: 2px;"/>
+  <input type="file" name="btn_file" style="display:none" onchange="file_change(this.value)"/>
+  <input type="button" value="浏 览" onclick="btn_file.click();" name="get_file"    style="width:50px; font-size:12px; margin-left: 60px;"/>
+  <input type="submit" value="提 交" name="sub" style="width:50px; font-size:12px;"/>
+</form> 
+</div> 
+
+    <div>按时间段查询：("yyyy-mm-dd")
+        <input type="text" style="width:70px; height:12px; margin-bottom: 12px; "/> -
+        <input type="text" style="width:70px; height:12px; margin-bottom: 12px; "/>
+        <br />按IP地址查询：
+        <input type="text" style="width:162px; height:12px; margin-bottom: 12px;"/>
+        <br />
+       按环境查询：
+        <select name="select2" id="select2" style="width:166px; height:20px; line-height: 18px; margin-bottom: 12px;">
+          <option selected="selected">交易所环境</option>
+          <option>VMATCH</option>
+        </select>
+        <br />
+       按柜台版本查询：
+        <input type="text" style="width:162px; height:12px; margin-bottom: 12px;"/>
+        <br />
+        按操作系统查询：
+<label for="select"></label>
+        <select name="select" id="select" style="width:166px; height:20px; line-height: 18px; margin-bottom: 12px;">
+          <option selected="selected">Linux</option>
+          <option>Win2008</option>
+          <option>Win2003</option>
+          <option>WinXP</option>
+          <option>Win7</option>
+          <option>Win8</option>
+        </select>
+        <input onclick="query(this)" type="button" value="查询" style="width:38px; font-size:12px; margin-left: 130px; margin-top: 20px;"/>
+      </div></td>
+    <td id="right_cont"><div class="cont_title">压力测试结果</div>
+    <div class="test_report_table_title">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>编号</td>
+            <td>时间</td>
+            <td>IP地址</td>
+            <td>环境</td>
+            <td>柜台版本</td>
+            <td>操作系统</td>
+          </tr>
+        </table>
+    </div>
+    <div class="test_report">
+    	<div class="test_report_summary">
+        	<table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>1</td>
+                <td>20140818 16:00:00</td>
+                <td>172.21.200.162</td>
+                <td>交易所系统</td>
+                <td>LINUX版</td>
+                <td>win2008</td>
+              </tr>
+            </table>
+        </div>
+        <div class="test_report_cont_open">
+        	<table width="100%"  cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="2" class="test_report_cont_title">服务器信息</td>
+                </tr>
+              <tr>
+                <td width="20%">操作系统</td>
+                <td width="70%">Windows Server 2008 R2 Enterprise 64位</td>
+              </tr>
+              <tr>
+                <td>CPU</td>
+                <td>Xeon E5-2643 v2 @ 3.50GHz 3.50GHz (2处理器)</td>
+              </tr>
+              <tr>
+                <td>内存</td>
+                <td>64.0GB</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="test_report_cont_title">测试结果-委托响应</td>
+                </tr>
+              <tr>
+                <td>平均时间</td>
+                <td>0.0000000123</td>
+              </tr>
+              <tr>
+                <td>最大时间</td>
+                <td>0.00123</td>
+              </tr>
+              <tr>
+                <td>最小时间</td>
+                <td>0.00000000123</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="test_report_cont_title">测试结果-委托响应</td>
+              </tr>
+              <tr>
+                <td>平均时间</td>
+                <td>0.0000000123</td>
+              </tr>
+              <tr>
+                <td>最大时间</td>
+                <td>0.00123</td>
+              </tr>
+              <tr>
+                <td>最小时间</td>
+                <td>0.00000000123</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="test_report_cont_download"><a href="#">下载测试报告</a></td>
+              </tr>
+
+            </table>
+        </div>    
+    </div>
+    <div class="test_report">
+    	<div class="test_report_summary">
+        	<table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>1</td>
+                <td>20140818 16:00:00</td>
+                <td>172.21.200.162</td>
+                <td>交易所系统</td>
+                <td>LINUX版</td>
+                <td>win2008</td>
+              </tr>
+            </table>
+        </div>
+        <div class="test_report_cont_close">
+        	<table width="100%"  cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="2" class="test_report_cont_title">服务器信息</td>
+                </tr>
+              <tr>
+                <td width="30%">操作系统</td>
+                <td width="70%">Windows Server 2008 R2 Enterprise 64位</td>
+              </tr>
+              <tr>
+                <td>CPU</td>
+                <td>Xeon E5-2643 v2 @ 3.50GHz 3.50GHz (2处理器)</td>
+              </tr>
+              <tr>
+                <td>内存</td>
+                <td>64.0GB</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="test_report_cont_title">测试结果-委托响应</td>
+                </tr>
+              <tr>
+                <td>平均时间</td>
+                <td>0.0000000123</td>
+              </tr>
+              <tr>
+                <td>最大时间</td>
+                <td>0.00123</td>
+              </tr>
+              <tr>
+                <td>最小时间</td>
+                <td>0.00000000123</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="test_report_cont_title">测试结果-委托响应</td>
+              </tr>
+              <tr>
+                <td>平均时间</td>
+                <td>0.0000000123</td>
+              </tr>
+              <tr>
+                <td>最大时间</td>
+                <td>0.00123</td>
+              </tr>
+              <tr>
+                <td>最小时间</td>
+                <td>0.00000000123</td>
+              </tr>
+            </table>
+        </div>    
+    </div>
+    
+    </td>
+  </tr>
+</table>
+</body>
+</html>
